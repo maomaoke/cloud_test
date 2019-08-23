@@ -10,6 +10,8 @@
     <version>1.0.0</version>
     <modules>
         <module>register-server</module>
+        <module>hello-server</module>
+        <module>ribbon-consumer</module>
     </modules>
 
     <parent>
@@ -23,7 +25,8 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
-    </properties>
+        <spring.cloud.ribbon.version>1.4.7.RELEASE</spring.cloud.ribbon.version>
+            </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -41,6 +44,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-ribbon</artifactId>
+                <version>${spring.cloud.ribbon.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
