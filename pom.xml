@@ -12,6 +12,8 @@
         <module>register-server</module>
         <module>hello-server</module>
         <module>ribbon-consumer</module>
+        <module>feign-consumer</module>
+        <module>hello-serve-rapi</module>
     </modules>
 
     <parent>
@@ -26,7 +28,9 @@
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
         <spring.cloud.ribbon.version>1.4.7.RELEASE</spring.cloud.ribbon.version>
-            </properties>
+        <spring.cloud.hystrix.version>1.4.7.RELEASE</spring.cloud.hystrix.version>
+        <spring.cloud.feign.version>2.1.2.RELEASE</spring.cloud.feign.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -49,10 +53,21 @@
                 <artifactId>spring-cloud-starter-ribbon</artifactId>
                 <version>${spring.cloud.ribbon.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix</artifactId>
+                <version>${spring.cloud.hystrix.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring.cloud.feign.version}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
-
 
 
 </project>
