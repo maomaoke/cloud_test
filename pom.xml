@@ -13,7 +13,8 @@
         <module>hello-server</module>
         <module>ribbon-consumer</module>
         <module>feign-consumer</module>
-        <module>hello-serve-rapi</module>
+        <module>hello-server-api</module>
+        <module>api-gateway</module>
     </modules>
 
     <parent>
@@ -48,24 +49,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-ribbon</artifactId>
-                <version>${spring.cloud.ribbon.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-hystrix -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-hystrix</artifactId>
-                <version>${spring.cloud.hystrix.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-openfeign</artifactId>
-                <version>${spring.cloud.feign.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
