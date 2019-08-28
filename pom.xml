@@ -15,6 +15,11 @@
         <module>feign-consumer</module>
         <module>hello-server-api</module>
         <module>api-gateway</module>
+        <module>config-server</module>
+        <module>config-client</module>
+        <module>rabbitmq-hello</module>
+        <module>stream-hello</module>
+        <module>transaction-mq-server</module>
     </modules>
 
     <parent>

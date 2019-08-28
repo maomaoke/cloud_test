@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/chenkechaoCoding/config-server.git
+          username: 15666791036
+          password: chenkechao!
+          search-paths: config-repo
+server:
+  port: 7001
