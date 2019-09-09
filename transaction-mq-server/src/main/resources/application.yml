@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: transaction-mq-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:33060/ds_0?useSSL=false&characterEncoding=UTF-8
+server:
+  port: 3101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+mybatis-plus:
+  global-config:
+    db-config:
+      select-strategy: ignored
+      update-strategy: ignored
+      insert-strategy: ignored
+  type-aliases-package: com.open.cloud.mqserver.pojo.entity
