@@ -33,6 +33,14 @@
         <spring.cloud.feign.version>2.1.2.RELEASE</spring.cloud.feign.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -51,6 +59,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
 </project>
