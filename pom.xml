@@ -15,6 +15,13 @@
         <module>feign-consumer</module>
         <module>hello-server-api</module>
         <module>api-gateway</module>
+        <module>config-server</module>
+        <module>config-client</module>
+        <module>rabbitmq-hello</module>
+        <module>stream-hello</module>
+        <module>transaction-mq-server</module>
+        <module>transaction-mq-task</module>
+        <module>transaction-mq-client</module>
     </modules>
 
     <parent>
@@ -28,9 +35,8 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
-        <spring.cloud.ribbon.version>1.4.7.RELEASE</spring.cloud.ribbon.version>
-        <spring.cloud.hystrix.version>1.4.7.RELEASE</spring.cloud.hystrix.version>
-        <spring.cloud.feign.version>2.1.2.RELEASE</spring.cloud.feign.version>
+        <springfox-swagger.version>2.9.2</springfox-swagger.version>
+        <redisson.version>3.11.0</redisson.version>
     </properties>
 
     <dependencies>

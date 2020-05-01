@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.open.cloud.mqserver.mapper.MessageMapper">
+
+    <insert id="batchInsert">
+        INSERT INTO t_message
+        (message, queue, send_system, send_time, status, die_count, customer_time, customer_system, die_time,
+        create_time, update_time)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.message}, #{item.queue}, #{item.sendSystem}, #{item.sendTime}, #{item.status}, #{item.dieCount},
+            #{item.customerTime}, #{item.customerSystem}, #{item.dieTime}, #{item.createTime}, #{item.updateTime})
+        </foreach>
+    </insert>
+</mapper>

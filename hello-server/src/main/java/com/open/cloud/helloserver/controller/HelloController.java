@@ -35,6 +35,7 @@ public class HelloController implements HelloService {
 
     @Override
     public User hello(@RequestParam("name") String name, @RequestParam("age") Integer age) {
+        log.info("调用~~~~~~~~~~");
         return new User(name, age);
     }
 

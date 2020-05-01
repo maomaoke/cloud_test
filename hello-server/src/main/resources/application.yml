@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8081
 spring:
   application:
     name: hello-server
@@ -9,3 +9,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
